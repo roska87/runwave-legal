@@ -11,7 +11,7 @@
 <main>
 <header><a href="./"><img src="icono.png" alt="">Runwave</a><a class="lang" href="privacy.html" hreflang="en" lang="en">English</a></header>
 <h1>Política de privacidad</h1>
-<p class="muted">Vigente desde el 21 de noviembre de 2026.</p>
+<p class="muted">Vigente desde el 22 de noviembre de 2026.</p>
 
 <div class="card">
 <p><strong>En resumen:</strong> hoy la app no envía tus datos a ningún servidor nuestro. Tus carreras se leen de la app Salud en tus dispositivos y no se copian a iCloud. Tus rutinas y zapatillas se guardan en tu dispositivo y, si usas iCloud, en tu propia cuenta de iCloud. La app no usa publicidad ni herramientas de análisis, y no vende ni comparte información con terceros.</p>
@@ -54,14 +54,14 @@
 <p>Estamos preparando la opción de enviar tus rutinas a un reloj Garmin. Esta función todavía no está en la app. Cuando esté disponible:</p>
 <ul>
 <li>Será opcional: solo funcionará si conectas tu cuenta de Garmin Connect desde Runwave. Inicias sesión en la página de Garmin; Runwave nunca ve tu contraseña.</li>
-<li>Para enviar las rutinas usaremos un servidor de Runwave. En él guardaremos el permiso de acceso que Garmin nos entrega, el identificador de tu cuenta de Garmin, un identificador de tu instalación de Runwave (para saber a quién corresponde ese permiso) y los identificadores de los entrenamientos que Runwave publicó en Garmin (para reemplazarlos si vuelves a enviar una rutina).</li>
+<li>Para enviar las rutinas usaremos un servidor de Runwave alojado en Cloudflare, Inc. (Cloudflare Workers y D1, en el este de Estados Unidos). En él guardaremos el permiso de acceso que Garmin nos entrega (cifrado), el identificador de tu cuenta de Garmin, un identificador aleatorio de tu instalación de Runwave (para saber a quién corresponde ese permiso) y los identificadores de los entrenamientos que Runwave publicó en Garmin (para reemplazarlos si vuelves a enviar una rutina). Cloudflare trata estos datos solo como nuestro proveedor de alojamiento.</li>
 <li>Solo enviaremos a tu calendario de Garmin Connect las rutinas que tú elijas: nombre, pasos, distancias, tiempos, ritmos objetivo y, si quieres, la fecha. Pasan por nuestro servidor solo para enviarlas; no las guardamos ahí.</li>
 <li>Runwave no leerá tus actividades ni tus datos de salud de Garmin.</li>
-<li>Los datos relacionados con Garmin no se usarán para entrenar modelos de inteligencia artificial ni se compartirán con terceros.</li>
-<li>Al desconectar Garmin desde la app, borraremos de nuestro servidor todo lo relacionado con tu cuenta de Garmin y le pediremos a Garmin que revoque el permiso. Si quitas el acceso desde Garmin Connect, Garmin nos avisa y lo borramos igual.</li>
-<li>Lo que envías a Garmin queda en tu cuenta de Garmin y se rige por la <a href="https://www.garmin.com/privacy/connect/">política de privacidad de Garmin</a>.</li>
+<li>Los datos relacionados con Garmin no se venderán, no se compartirán con nadie más que Cloudflare como proveedor de alojamiento, y no los procesarán sistemas de inteligencia artificial ni se usarán para entrenar, evaluar o mejorar modelos de IA.</li>
+<li>Guardamos estos datos solo mientras tu cuenta de Garmin esté conectada. Al desconectar Garmin desde la app, le pedimos a Garmin que revoque el permiso y borramos en el momento de nuestro servidor todo lo relacionado con tu cuenta de Garmin. Si quitas el acceso desde Garmin Connect, Garmin nos avisa y lo borramos igual. Si empiezas a conectar y no terminas, revocamos ese permiso en menos de una hora.</li>
+<li>Para acceder a estos datos, corregirlos, borrarlos o exportarlos, o para retirar tu consentimiento, desconecta Garmin desde la app o quita el acceso desde Garmin Connect, o escríbenos.</li>
+<li>Lo que envías a Garmin queda en tu cuenta de Garmin y se rige por la <a href="https://www.garmin.com/privacy/connect/">política de privacidad de Garmin</a>; según sus condiciones, Garmin puede usar lo que le envías.</li>
 </ul>
-<p>Antes de que esta función llegue a la app, vamos a actualizar esta política con los detalles definitivos, como dónde está el servidor y en qué plazo se borran los datos.</p>
 
 <h2>Rastreo y terceros</h2>
 <p>Runwave no te rastrea entre apps ni sitios web, no muestra publicidad, no usa herramientas de análisis ni SDK de terceros, y no vende ni comparte datos. Si en tu dispositivo aceptaste compartir análisis con los desarrolladores, Apple puede enviarnos informes de fallos anónimos de la app.</p>

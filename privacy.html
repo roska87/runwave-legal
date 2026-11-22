@@ -11,7 +11,7 @@
 <main>
 <header><a href="en.html"><img src="icono.png" alt="">Runwave</a><a class="lang" href="privacidad.html" hreflang="es" lang="es">Español</a></header>
 <h1>Privacy Policy</h1>
-<p class="muted">Effective November 21, 2026.</p>
+<p class="muted">Effective November 22, 2026.</p>
 
 <div class="card">
 <p><strong>In short:</strong> today the app does not send your data to any server of ours. Your runs are read from the Health app on your devices and are not copied to iCloud. Your workouts and shoes are stored on your device and, if you use iCloud, in your own iCloud account. The app has no ads or analytics, and does not sell or share information with third parties.</p>
@@ -55,14 +55,14 @@
 <p>We are preparing the option to send your workouts to a Garmin watch. This feature is not in the app yet. When it is available:</p>
 <ul>
 <li>It will be optional: it only works if you connect your Garmin Connect account from Runwave. You sign in on Garmin's page; Runwave never sees your password.</li>
-<li>To send workouts we will use a Runwave server. On it we will store the access permission that Garmin gives us, your Garmin user identifier, an identifier of your Runwave installation (to know whom that permission belongs to) and the identifiers of the workouts Runwave published to Garmin (to replace them if you send a workout again).</li>
+<li>To send workouts we will use a Runwave server hosted by Cloudflare, Inc. (Cloudflare Workers and D1, in the eastern United States). On it we will store the access permission that Garmin gives us (encrypted), your Garmin user identifier, a random identifier of your Runwave installation (to know whom that permission belongs to) and the identifiers of the workouts Runwave published to Garmin (to replace them if you send a workout again). Cloudflare processes this data only as our hosting provider.</li>
 <li>We will only send to your Garmin Connect calendar the workouts you choose: name, steps, distances, times, target paces and, if you want, the date. They pass through our server only to be sent; we do not store them there.</li>
 <li>Runwave will not read your Garmin activities or health data.</li>
-<li>Garmin-related data will not be used to train artificial intelligence models and will not be shared with third parties.</li>
-<li>When you disconnect Garmin in the app, we will delete everything related to your Garmin account from our server and ask Garmin to revoke the permission. If you remove access from Garmin Connect, Garmin notifies us and we delete it as well.</li>
-<li>What you send to Garmin stays in your Garmin account and is governed by <a href="https://www.garmin.com/privacy/connect/">Garmin's privacy policy</a>.</li>
+<li>Garmin-related data will not be sold, will not be shared with anyone other than Cloudflare as our hosting provider, and will not be processed by artificial intelligence systems or used to train, evaluate or improve AI models.</li>
+<li>We keep this data only while your Garmin account is connected. When you disconnect Garmin in the app, we ask Garmin to revoke the permission and immediately delete everything related to your Garmin account from our server. If you remove access from Garmin Connect, Garmin notifies us and we delete it as well. If you start connecting but don't finish, we revoke that permission within an hour.</li>
+<li>To access, correct, delete or export this data, or to withdraw your consent, disconnect Garmin in the app or remove access from Garmin Connect, or write to us.</li>
+<li>What you send to Garmin stays in your Garmin account and is governed by <a href="https://www.garmin.com/privacy/connect/">Garmin's privacy policy</a>; under its terms, Garmin may use what you send.</li>
 </ul>
-<p>Before this feature reaches the app, we will update this policy with the final details, such as where the server is located and how soon data is deleted.</p>
 
 <h2>Tracking and third parties</h2>
 <p>Runwave does not track you across apps or websites, shows no ads, uses no third-party analytics or SDKs, and does not sell or share data. If you agreed on your device to share analytics with app developers, Apple may send us anonymous crash reports for the app.</p>
