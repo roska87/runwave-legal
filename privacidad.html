@@ -11,10 +11,10 @@
 <main>
 <header><a href="./"><img src="icono.png" alt="">Runwave</a><a class="lang" href="privacy.html" hreflang="en" lang="en">English</a></header>
 <h1>Política de privacidad</h1>
-<p class="muted">Vigente desde el 22 de noviembre de 2026.</p>
+<p class="muted">Vigente desde el 25 de noviembre de 2026.</p>
 
 <div class="card">
-<p><strong>En resumen:</strong> hoy la app no envía tus datos a ningún servidor nuestro. Tus carreras se leen de la app Salud en tus dispositivos y no se copian a iCloud. Tus rutinas y zapatillas se guardan en tu dispositivo y, si usas iCloud, en tu propia cuenta de iCloud. La app no usa publicidad ni herramientas de análisis, y no vende ni comparte información con terceros.</p>
+<p><strong>En resumen:</strong> tus carreras se leen de la app Salud en tus dispositivos, no se copian a iCloud y nunca llegan a nuestro servidor. Tus rutinas y zapatillas se guardan en tu dispositivo y, si usas iCloud, en tu propia cuenta de iCloud. Solo si usas Grupos guardamos en nuestro servidor tu cuenta de Grupos y lo que compartes en tus grupos (ver «Grupos»). La app no usa publicidad ni herramientas de análisis, y no vende tu información ni la comparte con terceros; lo que publicas en un grupo lo ven sus miembros.</p>
 </div>
 
 <h2>Quién es responsable</h2>
@@ -50,11 +50,25 @@
 <h2>Exportar tus datos</h2>
 <p>Desde Configuración puedes exportar un archivo con tus rutinas, zapatillas (sin fotos), ajustes de kilometraje (salvo «Fijar total»), entrenamientos agendados y preferencias. No incluye datos de Salud. Tú decides dónde guardar o con quién compartir ese archivo.</p>
 
+<h2>Grupos</h2>
+<p>Grupos es opcional: sirve para compartir rutinas con tu equipo, tu club o tus alumnos. Si no inicias sesión en Grupos, la app no nos envía nada de esta sección.</p>
+<ul>
+<li><strong>Tu cuenta:</strong> entras con «Iniciar sesión con Apple». No le pedimos tu correo a Apple: guardamos el identificador que Apple genera para Runwave. La primera vez, la app te sugiere el nombre de pila de tu cuenta de Apple como nombre para los grupos; solo lo guardamos si lo confirmas, y puedes cambiarlo cuando quieras. Ese nombre lo ven los demás miembros de tus grupos. También guardamos, cifrado, el permiso que Apple nos entrega, solo para revocarlo cuando borras tu cuenta. Tu sesión queda en el llavero de ese dispositivo, sin sincronizarse con iCloud; en el servidor guardamos solo una huella (hash) de ella.</li>
+<li><strong>Tus grupos:</strong> el nombre de cada grupo, quién es el dueño, quién puede publicar, quién es miembro, su rol (coach o alumno) y cuándo entró, y los códigos de invitación con quién los creó, su nombre opcional, rol, si son de un solo uso, vencimiento y cuántas veces se usaron.</li>
+<li><strong>Rutinas compartidas:</strong> cuando publicas una rutina en un grupo, guardamos su nombre, categoría y notas, sus pasos (tipo, distancia o tiempo, ritmo objetivo, repeticiones y notas), un identificador de la rutina original de tu biblioteca, tu nombre como autor y hasta cuándo está disponible. La ven los miembros del grupo, que pueden enviarla a su reloj o guardar una copia en su biblioteca; esas copias son de cada uno y no se borran si retiras la rutina. Nunca se comparten tus carreras ni datos de Salud.</li>
+<li><strong>Registro de invitaciones:</strong> por seguridad y para prevenir abusos, anotamos cada vez que se ve o se usa un código desde la app: qué código, de qué grupo, quién, cuándo y qué pasó. Las visitas a la página web del enlace de invitación se cuentan sin saber quién fue y sin guardar la dirección IP. Cada anotación se borra a los 90 días. Además, para frenar a quien prueba códigos al azar, guardamos 24 horas los códigos inexistentes que se probaron junto con una huella (hash) de tu identificador de Apple, aunque borres tu cuenta en ese plazo.</li>
+<li><strong>Moderación:</strong> si bloqueas a alguien, guardamos a quién bloqueaste. Si un coach te expulsa de un grupo, guardamos cuándo fue, para que no vuelvas a entrar con un código anterior. Si denuncias una rutina o a un miembro, guardamos la denuncia con el motivo y una copia de lo denunciado, para revisarla a mano. Las denuncias se guardan un año, aunque se borre lo denunciado o la cuenta de quien lo publicó.</li>
+<li><strong>Dónde se guarda:</strong> en Cloudflare D1, en el este de Estados Unidos; el servidor de Runwave (Cloudflare Workers) atiende cada pedido desde el centro de datos de Cloudflare más cercano. Cloudflare, Inc. trata estos datos solo como nuestro proveedor de alojamiento. La conexión siempre es cifrada. Para limitar abusos usamos tu dirección IP solo un momento, sin guardarla. Para que veas tus grupos sin conexión, la app guarda una copia en la caché de tu dispositivo, que no va a iCloud y se borra al cerrar sesión.</li>
+<li><strong>Cuánto tiempo:</strong> tu cuenta y tus grupos se guardan hasta que borres la cuenta, aunque dejes de usar la app. Los códigos de invitación se borran al vencer (como mucho, a los 7 días). Una rutina publicada con plazo se borra al terminar ese plazo (como mucho, 90 días); sin plazo, queda hasta que la retires. Si sales de un grupo o te expulsan, se borran las rutinas que publicaste en él y tus códigos de ese grupo. Si el dueño borra un grupo, se borra todo lo del grupo. Si pasas un año sin usar Grupos en un dispositivo, se cierra la sesión en él; tu cuenta sigue.</li>
+<li><strong>Borrar tu cuenta:</strong> en Runwave › Configuración › Cuenta de grupos › Eliminar cuenta. Borramos en el momento tu cuenta, tus membresías, las rutinas que publicaste, tus códigos, tus bloqueos y tu registro de invitaciones, y le pedimos a Apple que revoque el permiso. Los grupos donde eras el único coach se borran, con sus miembros y rutinas; en los demás, si eras el dueño, la propiedad pasa al coach más antiguo. Las denuncias que hiciste se conservan sin tu identificación, y las denuncias sobre ti siguen su plazo de un año. Las copias de seguridad automáticas de la base de datos se reemplazan solas en hasta 30 días.</li>
+<li>Los datos de Grupos no se venden ni se usan para publicidad. Además de los miembros de tus grupos, solo los reciben Cloudflare, como proveedor de alojamiento, y Apple, para confirmar tu inicio de sesión y revocar el permiso cuando borras tu cuenta.</li>
+</ul>
+
 <h2>Garmin (próximamente)</h2>
 <p>Estamos preparando la opción de enviar tus rutinas a un reloj Garmin. Esta función todavía no está en la app. Cuando esté disponible:</p>
 <ul>
 <li>Será opcional: solo funcionará si conectas tu cuenta de Garmin Connect desde Runwave. Inicias sesión en la página de Garmin; Runwave nunca ve tu contraseña.</li>
-<li>Para enviar las rutinas usaremos un servidor de Runwave alojado en Cloudflare, Inc. (Cloudflare Workers y D1, en el este de Estados Unidos). En él guardaremos el permiso de acceso que Garmin nos entrega (cifrado), el identificador de tu cuenta de Garmin, un identificador aleatorio de tu instalación de Runwave (para saber a quién corresponde ese permiso) y los identificadores de los entrenamientos que Runwave publicó en Garmin (para reemplazarlos si vuelves a enviar una rutina). Cloudflare trata estos datos solo como nuestro proveedor de alojamiento.</li>
+<li>Para enviar las rutinas usaremos el mismo servidor de Runwave que usa Grupos, alojado en Cloudflare, Inc. (Cloudflare Workers y D1, en el este de Estados Unidos). En él guardaremos el permiso de acceso que Garmin nos entrega (cifrado), el identificador de tu cuenta de Garmin, un identificador aleatorio de tu instalación de Runwave (para saber a quién corresponde ese permiso) y los identificadores de los entrenamientos que Runwave publicó en Garmin (para reemplazarlos si vuelves a enviar una rutina). Cloudflare trata estos datos solo como nuestro proveedor de alojamiento.</li>
 <li>Solo enviaremos a tu calendario de Garmin Connect las rutinas que tú elijas: nombre, pasos, distancias, tiempos, ritmos objetivo y, si quieres, la fecha. Pasan por nuestro servidor solo para enviarlas; no las guardamos ahí.</li>
 <li>Runwave no leerá tus actividades ni tus datos de salud de Garmin.</li>
 <li>Los datos relacionados con Garmin no se venderán, no se compartirán con nadie más que Cloudflare como proveedor de alojamiento, y no los procesarán sistemas de inteligencia artificial ni se usarán para entrenar, evaluar o mejorar modelos de IA.</li>
@@ -74,13 +88,14 @@
 <li>Para borrar lo que guarda la app en tu dispositivo, elimina la app.</li>
 <li>Para borrar la copia de iCloud, ve a Configuración › tu nombre › iCloud, entra al almacenamiento de tu cuenta, elige Runwave y borra sus datos.</li>
 <li>Tus carreras quedan en la app Salud, que es donde se registraron. Para quitarle a Runwave el acceso, ve a Configuración › Privacidad y seguridad › Salud › Runwave.</li>
+<li>Si usas Grupos, antes de eliminar la app borra tu cuenta en Runwave › Configuración › Cuenta de grupos › Eliminar cuenta: ni eliminar la app, ni cerrar sesión, ni dejar de usar «Iniciar sesión con Apple» desde los ajustes de tu cuenta de Apple borran lo que guardamos en el servidor. Si ya eliminaste la app, vuelve a instalarla, entra con la misma cuenta de Apple y bórrala desde ahí.</li>
 </ul>
 
 <h2>Menores de edad</h2>
-<p>Runwave no está dirigida a menores de 13 años y no recopila datos de nadie, incluidos menores.</p>
+<p>Runwave no está dirigida a menores de 13 años. Fuera de Grupos, la app no nos envía datos de nadie. Si nos enteramos de que una cuenta de Grupos es de un menor de 13 años, la borramos.</p>
 
 <h2>Tus derechos</h2>
-<p>Hoy la app no nos envía datos personales, así que no tenemos información tuya para consultar, corregir o borrar, salvo los correos que nos hayas mandado. Si tienes una duda o un pedido relacionado con la Ley N.º 18.331 de Protección de Datos Personales de Uruguay, escríbenos.</p>
+<p>Si no usas Grupos ni conectas Garmin, no tenemos información tuya para consultar, corregir o borrar, salvo los correos que nos hayas mandado. Si usas Grupos, desde la app puedes cambiar tu nombre y borrar tu cuenta (en «Grupos» está lo poco que se conserva después); para pedir una copia de lo que guardamos sobre ti, o por cualquier otro pedido relacionado con la Ley N.º 18.331 de Protección de Datos Personales de Uruguay, escríbenos.</p>
 
 <h2>Cambios en esta política</h2>
 <p>Si cambia la forma en que la app trata datos, vamos a actualizar esta página y la fecha de vigencia antes de que el cambio llegue a la app.</p>

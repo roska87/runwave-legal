@@ -11,10 +11,10 @@
 <main>
 <header><a href="en.html"><img src="icono.png" alt="">Runwave</a><a class="lang" href="privacidad.html" hreflang="es" lang="es">Español</a></header>
 <h1>Privacy Policy</h1>
-<p class="muted">Effective November 22, 2026.</p>
+<p class="muted">Effective November 25, 2026.</p>
 
 <div class="card">
-<p><strong>In short:</strong> today the app does not send your data to any server of ours. Your runs are read from the Health app on your devices and are not copied to iCloud. Your workouts and shoes are stored on your device and, if you use iCloud, in your own iCloud account. The app has no ads or analytics, and does not sell or share information with third parties.</p>
+<p><strong>In short:</strong> your runs are read from the Health app on your devices, are not copied to iCloud and never reach our server. Your workouts and shoes are stored on your device and, if you use iCloud, in your own iCloud account. Only if you use Groups do we store your Groups account and what you share in your groups on our server (see "Groups"). The app has no ads or analytics, and does not sell your information or share it with third parties; what you publish in a group is seen by its members.</p>
 </div>
 
 
@@ -51,11 +51,25 @@
 <h2>Exporting your data</h2>
 <p>From the app's Settings, "Export My Data" saves a file with your workouts, shoes (without photos), mileage adjustments (except "Set Total"), scheduled workouts and preferences. It does not include Health data. You decide where to save that file or whom to share it with.</p>
 
+<h2>Groups</h2>
+<p>Groups is optional: it lets you share workouts with your team, your club or your athletes. If you don't sign in to Groups, the app sends us nothing described in this section.</p>
+<ul>
+<li><strong>Your account:</strong> you sign in with "Sign in with Apple". We don't ask Apple for your email: we store the identifier Apple creates for Runwave. The first time, the app suggests the first name on your Apple Account as your name in groups; we only store it if you confirm it, and you can change it at any time. Other members of your groups see that name. We also store, encrypted, the permission Apple gives us, only to revoke it when you delete your account. Your session stays in that device's keychain and is not synced to iCloud; on the server we only store a fingerprint (hash) of it.</li>
+<li><strong>Your groups:</strong> each group's name, who owns it, who can publish, who is a member, their role (coach or athlete) and when they joined, and invite codes with who created them, their optional name, role, whether they are single-use, expiry and how many times they were used.</li>
+<li><strong>Shared workouts:</strong> when you publish a workout to a group, we store its name, category and notes, its steps (type, distance or time, target pace, repeats and notes), an identifier of the original workout in your library, your name as its author and until when it is available. Group members can see it, send it to their watch or save a copy to their library; those copies belong to each member and are not deleted if you remove the workout. Your runs and Health data are never shared.</li>
+<li><strong>Invite log:</strong> for security and to prevent abuse, we record each time a code is viewed or used from the app: which code, which group, who, when and what happened. Visits to the invite link's web page are counted without knowing who visited and without storing the IP address. Each entry is deleted after 90 days. In addition, to stop people from guessing codes, we keep for 24 hours the non-existent codes that were tried together with a fingerprint (hash) of your Apple identifier, even if you delete your account within that time.</li>
+<li><strong>Moderation:</strong> if you block someone, we store whom you blocked. If a coach removes you from a group, we store when it happened so you can't rejoin with an older code. If you report a workout or a member, we store the report with its reason and a copy of what was reported, so we can review it manually. Reports are kept for one year, even if the reported content or its author's account is deleted.</li>
+<li><strong>Where it is stored:</strong> in Cloudflare D1, in the eastern United States; the Runwave server (Cloudflare Workers) handles each request from the nearest Cloudflare data center. Cloudflare, Inc. processes this data only as our hosting provider. The connection is always encrypted. To limit abuse we use your IP address only briefly, without storing it. So you can see your groups offline, the app keeps a copy in your device's cache, which does not go to iCloud and is deleted when you sign out.</li>
+<li><strong>How long:</strong> your account and your groups are kept until you delete the account, even if you stop using the app. Invite codes are deleted when they expire (after 7 days at most). A workout published with a time limit is deleted when it ends (90 days at most); without one, it stays until you remove it. If you leave a group or are removed from it, the workouts you published there and your codes for that group are deleted. If the owner deletes a group, everything in it is deleted. If you don't use Groups on a device for a year, it is signed out there; your account remains.</li>
+<li><strong>Deleting your account:</strong> in Runwave › Settings › Groups Account › Delete Account. We immediately delete your account, your memberships, the workouts you published, your codes, your blocks and your invite log, and we ask Apple to revoke the permission. Groups where you were the only coach are deleted, with their members and workouts; in the others, if you were the owner, ownership passes to the longest-standing coach. Reports you made are kept without your identity, and reports about you keep their one-year limit. The database's automatic backups are replaced on their own within 30 days.</li>
+<li>Groups data is not sold or used for advertising. Besides the members of your groups, only Cloudflare, as our hosting provider, and Apple, to confirm your sign-in and revoke the permission when you delete your account, receive it.</li>
+</ul>
+
 <h2>Garmin (coming soon)</h2>
 <p>We are preparing the option to send your workouts to a Garmin watch. This feature is not in the app yet. When it is available:</p>
 <ul>
 <li>It will be optional: it only works if you connect your Garmin Connect account from Runwave. You sign in on Garmin's page; Runwave never sees your password.</li>
-<li>To send workouts we will use a Runwave server hosted by Cloudflare, Inc. (Cloudflare Workers and D1, in the eastern United States). On it we will store the access permission that Garmin gives us (encrypted), your Garmin user identifier, a random identifier of your Runwave installation (to know whom that permission belongs to) and the identifiers of the workouts Runwave published to Garmin (to replace them if you send a workout again). Cloudflare processes this data only as our hosting provider.</li>
+<li>To send workouts we will use the same Runwave server that Groups uses, hosted by Cloudflare, Inc. (Cloudflare Workers and D1, in the eastern United States). On it we will store the access permission that Garmin gives us (encrypted), your Garmin user identifier, a random identifier of your Runwave installation (to know whom that permission belongs to) and the identifiers of the workouts Runwave published to Garmin (to replace them if you send a workout again). Cloudflare processes this data only as our hosting provider.</li>
 <li>We will only send to your Garmin Connect calendar the workouts you choose: name, steps, distances, times, target paces and, if you want, the date. They pass through our server only to be sent; we do not store them there.</li>
 <li>Runwave will not read your Garmin activities or health data.</li>
 <li>Garmin-related data will not be sold, will not be shared with anyone other than Cloudflare as our hosting provider, and will not be processed by artificial intelligence systems or used to train, evaluate or improve AI models.</li>
@@ -75,13 +89,14 @@
 <li>To delete what the app stores on your device, delete the app.</li>
 <li>To delete the iCloud copy, go to Settings › your name › iCloud, open your account storage, choose Runwave and delete its data.</li>
 <li>Your runs stay in the Health app, where they were recorded. To remove Runwave's access, go to Settings › Privacy &amp; Security › Health › Runwave.</li>
+<li>If you use Groups, before deleting the app delete your account in Runwave › Settings › Groups Account › Delete Account: deleting the app, signing out, or stopping "Sign in with Apple" in your Apple Account settings does not delete what we store on the server. If you already deleted the app, reinstall it, sign in with the same Apple Account and delete it from there.</li>
 </ul>
 
 <h2>Children</h2>
-<p>Runwave is not directed at children under 13 and does not collect data from anyone, including children.</p>
+<p>Runwave is not directed at children under 13. Outside Groups, the app sends us no data about anyone. If we learn that a Groups account belongs to a child under 13, we delete it.</p>
 
 <h2>Your rights</h2>
-<p>Today the app does not send us personal data, so we have no information about you to access, correct or delete, other than emails you sent us. If you have a question or request under Uruguay's Personal Data Protection Law No. 18,331, write to us.</p>
+<p>If you don't use Groups or connect Garmin, we have no information about you to access, correct or delete, other than emails you sent us. If you use Groups, you can change your name in the app and delete your account (see "Groups" for the little that is kept afterwards); to request a copy of what we store about you, or for any other request under Uruguay's Personal Data Protection Law No. 18,331, write to us.</p>
 
 <h2>Changes to this policy</h2>
 <p>If the way the app handles data changes, we will update this page and its effective date before the change reaches the app.</p>
